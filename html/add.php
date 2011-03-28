@@ -16,7 +16,7 @@ if (!empty($_POST)) {
 	}
 
 	if (!empty($_POST['where'])) {
-		if (!preg_match('/.{,60}/', $_POST['where']) {
+		if (!preg_match('/.{,60}/', $_POST['where'])) {
 			$errors[] = 'where';
 		}
         } else {
@@ -24,7 +24,7 @@ if (!empty($_POST)) {
 	}
 
         if (!empty($_POST['comment'])) {
-                if (!preg_match('/.{,1000}/', $_POST['comment']) {
+                if (!preg_match('/.{,1000}/', $_POST['comment'])) {
                         $errors[] = 'comment';
                 }
         } else {
